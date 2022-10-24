@@ -30,32 +30,34 @@
     <!-- Navigation Section -->
     <nav>
       <div class="active"><img class="nav-icon" src="icons/icon-dashboard.svg" alt="dashboard icon"></div>
-      <div><img class="nav-icon" src="icons/icon-members.svg" alt="members icon"></div>
-      <div><img class="nav-icon" src="icons/icon-visits.svg" alt="visits icon"></div>
-      <div><img class="nav-icon" src="icons/icon-settings.svg" alt="settings icon"></div>
+      <div><a href="#members"><img class="nav-icon" src="icons/icon-members.svg" alt="members icon"></a></div>
+      <div><a href="#visits" ><img class="nav-icon" src="icons/icon-visits.svg" alt="visits icon"></a></div>
+      <div><a href="#settings"><img class="nav-icon" src="icons/icon-settings.svg" alt="settings icon"></a></div>
     </nav>
 
     <!-- Main Content Section -->
     <main>
 
       <!-- Dashboard Section -->
-      <div class="dashboard">
-        <div class="db-container">
-          <h2>dashboard</h2>
-          <div class="dashboard-search-bg">
-            <input class="dashboard-search" name="dashboard-search" type="search" placeholder="Search">
-            <div class="mag-bg">
-              <img class="search-icon" src="icons/mag-glass.svg" alt="magnifying glass icon">
+      <section id="dashboard">
+        <div class="dashboard">
+          <div class="db-container">
+            <h2>dashboard</h2>
+            <div class="dashboard-search-bg">
+              <input class="dashboard-search" name="dashboard-search" type="search" placeholder="Search">
+              <div class="mag-bg">
+                <img class="search-icon" src="icons/mag-glass.svg" alt="magnifying glass icon">
+              </div>
+            </div>
+          </div>
+          <div class="alert-container">
+            <div class="alert">
+              <p><strong>Alert</strong> - This is your alert message!</p>
+              <button class="btn-alert-x">&times;</button>
             </div>
           </div>
         </div>
-        <div class="alert-container">
-          <div class="alert">
-            <p><strong>Alert</strong> - This is your alert message!</p>
-            <button class="btn-alert-x">&times;</button>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <!-- Traffic Section -->
       <div class="traffic widget">
@@ -132,128 +134,132 @@
       </div>
 
       <!-- New Members Section -->
-      <div class="new-members widget">
-        <h3>new members</h3>
-        <div class="member-card">
-          <!-- Member 1 -->
-          <img class="profile-pic" src="images/member-1.jpg" alt="member1 profile pic">
-          <div class="member-info">
-            <div class="name-address">
-              <h4>victoria chambers</h4>
-              <p>victoria.chambers80@example.com</p>
-            </div>
-            <div class="member-date">
-              <h4>10/15/15</h4>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="member-card">
-          <!-- Member 2 -->
-          <img class="profile-pic" src="images/member-2.jpg" alt="member1 profile pic">
-          <div class="member-info">
-            <div class="name-address">
-              <h4>dale byrd</h4>
-              <p>dale.byrd52@example.com</p>
-            </div>
-            <div class="member-date">
-              <h4>10/15/15</h4>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="member-card">
-          <!-- Member 3 -->
-          <img class="profile-pic" src="images/member-3.jpg" alt="member1 profile pic">
-          <div class="member-info">
-            <div class="name-address">
-              <h4>dawn wood</h4>
-              <p>dawnwood16@example.com</p>
-            </div>
-            <div class="member-date">
-              <h4>10/15/15</h4>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="member-card">
-          <!-- Member 4 -->
-          <img class="profile-pic" src="images/member-4.jpg" alt="member1 profile pic">
-          <div class="member-info">
-            <div class="name-address">
-              <h4>dan oliver</h4>
-              <p>danoliver82@example.com</p>
-            </div>
-            <div class="member-date">
-              <h4>10/15/15</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Recent Activity Section -->
-      <div class="recent-activity widget">
-        <h3>recent activity</h3>
-        <div class="activity-card">
-          <!-- Member 1 -->
-          <div class="activity-info">
+      <section id="members">
+        <div class="new-members widget">
+          <h3>new members</h3>
+          <div class="member-card">
+            <!-- Member 1 -->
             <img class="profile-pic" src="images/member-1.jpg" alt="member1 profile pic">
-            <div class="comment-time">
-              <p>Victoria Chambers commented on YourApp's SEO Tips</p>
-              <p class="time">4 hours ago</p>
+            <div class="member-info">
+              <div class="name-address">
+                <h4>victoria chambers</h4>
+                <p>victoria.chambers80@example.com</p>
+              </div>
+              <div class="member-date">
+                <h4>10/15/15</h4>
+              </div>
             </div>
           </div>
-          <div class="right-angle">&rang;</div>
-        </div>
-        <hr>
-        <div class="activity-card">
-          <!-- Member 2 -->
-          <div class="activity-info">
+          <hr>
+          <div class="member-card">
+            <!-- Member 2 -->
             <img class="profile-pic" src="images/member-2.jpg" alt="member1 profile pic">
-            <div class="comment-time">
-              <p>Dale Byrd likes the post Facebook's changes for 2018</p>
-              <p class="time">5 hours ago</p>
+            <div class="member-info">
+              <div class="name-address">
+                <h4>dale byrd</h4>
+                <p>dale.byrd52@example.com</p>
+              </div>
+              <div class="member-date">
+                <h4>10/15/15</h4>
+              </div>
             </div>
           </div>
-          <div class="right-angle">&rang;</div>
-        </div>
-        <hr>
-        <div class="activity-card">
-          <!-- Member 3 -->
-          <div class="activity-info">
+          <hr>
+          <div class="member-card">
+            <!-- Member 3 -->
             <img class="profile-pic" src="images/member-3.jpg" alt="member1 profile pic">
-            <div class="comment-time">
-              <p>Dawn Wood commented on Facebook's changes for 2018</p>
-              <p class="time">5 hours ago</p>
+            <div class="member-info">
+              <div class="name-address">
+                <h4>dawn wood</h4>
+                <p>dawnwood16@example.com</p>
+              </div>
+              <div class="member-date">
+                <h4>10/15/15</h4>
+              </div>
             </div>
           </div>
-          <div class="right-angle">&rang;</div>
-        </div>
-        <hr>
-        <div class="activity-card">
-          <!-- Member 4 -->
-          <div class="activity-info">
+          <hr>
+          <div class="member-card">
+            <!-- Member 4 -->
             <img class="profile-pic" src="images/member-4.jpg" alt="member1 profile pic">
-            <div class="comment-time">
-              <p>Dan Oliver posted on YourApp's SEO Tips</p>
-              <p class="time">1 day ago</p>
+            <div class="member-info">
+              <div class="name-address">
+                <h4>dan oliver</h4>
+                <p>danoliver82@example.com</p>
+              </div>
+              <div class="member-date">
+                <h4>10/15/15</h4>
+              </div>
             </div>
           </div>
-          <div class="right-angle">&rang;</div>
         </div>
-      </div>
+      </section>
+      <section id="visits">
+        <!-- Recent Activity Section -->
+        <div class="recent-activity widget">
+          <h3>recent activity</h3>
+          <div class="activity-card">
+            <!-- Member 1 -->
+            <div class="activity-info">
+              <img class="profile-pic" src="images/member-1.jpg" alt="member1 profile pic">
+              <div class="comment-time">
+                <p>Victoria Chambers commented on YourApp's SEO Tips</p>
+                <p class="time">4 hours ago</p>
+              </div>
+            </div>
+            <div class="right-angle">&rang;</div>
+          </div>
+          <hr>
+          <div class="activity-card">
+            <!-- Member 2 -->
+            <div class="activity-info">
+              <img class="profile-pic" src="images/member-2.jpg" alt="member1 profile pic">
+              <div class="comment-time">
+                <p>Dale Byrd likes the post Facebook's changes for 2018</p>
+                <p class="time">5 hours ago</p>
+              </div>
+            </div>
+            <div class="right-angle">&rang;</div>
+          </div>
+          <hr>
+          <div class="activity-card">
+            <!-- Member 3 -->
+            <div class="activity-info">
+              <img class="profile-pic" src="images/member-3.jpg" alt="member1 profile pic">
+              <div class="comment-time">
+                <p>Dawn Wood commented on Facebook's changes for 2018</p>
+                <p class="time">5 hours ago</p>
+              </div>
+            </div>
+            <div class="right-angle">&rang;</div>
+          </div>
+          <hr>
+          <div class="activity-card">
+            <!-- Member 4 -->
+            <div class="activity-info">
+              <img class="profile-pic" src="images/member-4.jpg" alt="member1 profile pic">
+              <div class="comment-time">
+                <p>Dan Oliver posted on YourApp's SEO Tips</p>
+                <p class="time">1 day ago</p>
+              </div>
+            </div>
+            <div class="right-angle">&rang;</div>
+          </div>
+        </div>
 
-      <!-- Message User Section -->
-      <div class="message-user widget">
-        <h3>message user</h3>
-        <!-- <div class="user-fields"> -->
-        <form class="user-fields">
-          <input class="user-search" name="user-search" type="search" placeholder="Search for User">
-          <textarea class="user-message" name="user_message" placeholder="Message for User"></textarea>
-          <button class="message-user-send" name="message-user-send" type="submit" value="submit">send</button>
-        </form>
-        <!-- </div> -->
-      </div>
+        <!-- Message User Section -->
+        <div class="message-user widget">
+          <h3>message user</h3>
+          <!-- <div class="user-fields"> -->
+          <form class="user-fields">
+            <input class="user-search" name="user-search" type="search" placeholder="Search for User">
+            <textarea class="user-message" name="user_message" placeholder="Message for User"></textarea>
+            <button class="message-user-send" name="message-user-send" type="submit" value="submit">send</button>
+          </form>
+          <!-- </div> -->
+        </div>
+      </section>
+      <section id="settings">
 
       <!-- Settings Section -->
       <div class="settings widget">
@@ -288,6 +294,7 @@
           </div>
         </div>
       </div>
+    </section>
     </main>
   </div>
 
